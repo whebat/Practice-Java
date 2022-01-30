@@ -50,5 +50,5 @@ EXAMPLE INPUT/OUTPUT:
 
 NOTE: Method needs to be defined as public static.
       Do not add a main method to solution code.
-      The solution will not be accepted if there are extra spaces
+      The solution will not be accepted if there are extra spaces.
 */

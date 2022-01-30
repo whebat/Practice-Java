@@ -2,7 +2,7 @@
 @author whebat
 */
 
-public class Ex2_MegaBytesConverter
+public class Ex02_MegaBytesConverter
 {
 	public static void printMegaBytesAndKiloBytes(int kiloBytes)
 	{

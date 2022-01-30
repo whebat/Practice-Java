@@ -1,4 +1,4 @@
-public class Ex3_BarkingDog
+public class Ex03_BarkingDog
 {
 	public static boolean shouldWakeUp (boolean barking, int hourOfDay)
 	{

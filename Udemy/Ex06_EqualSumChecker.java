@@ -2,7 +2,7 @@
 @author whebat
 */
 
-public class Ex6_EqualSumChecker
+public class Ex06_EqualSumChecker
 {
 	public static boolean hasEqualSum (int a, int b, int c)
 	{

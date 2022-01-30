@@ -2,7 +2,7 @@
 @author whebat
 */
 
-public class Ex9_MinutesToYearsDaysCalculator
+public class Ex09_MinutesToYearsDaysCalculator
 {
 	public static void printYearsAndDays(long minutes)
 	{

@@ -2,7 +2,7 @@
 @author whebat
 */
 
-public class Ex8_AreaCalculator
+public class Ex08_AreaCalculator
 {
 	public static double area(double radius)
 	{

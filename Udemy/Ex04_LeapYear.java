@@ -2,7 +2,7 @@
 @author whebat
 */
 
-public class Ex4_LeapYear
+public class Ex04_LeapYear
 {
 	public static boolean isLeapYear (int year)
 	{

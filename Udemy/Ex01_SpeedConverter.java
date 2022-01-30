@@ -2,7 +2,7 @@
 @author whebat
 */
 
-public class Ex1_SpeedConverter
+public class Ex01_SpeedConverter
 {
 	public static long toMilesPerHour(double kilometersPerHour)
 	{

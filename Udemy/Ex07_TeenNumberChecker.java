@@ -2,7 +2,7 @@
 @author whebat
 */
 
-public class Ex7_TeenNumberChecker
+public class Ex07_TeenNumberChecker
 {
 	public static boolean hasTeen (int ageA, int ageB, int ageC)
 	{

@@ -2,7 +2,7 @@
 @author whebat
 */
 
-public class Ex5_DecimalComparator
+public class Ex05_DecimalComparator
 {
 	public static boolean areEqualByThreeDecimalPlaces (double a, double b)
 	{

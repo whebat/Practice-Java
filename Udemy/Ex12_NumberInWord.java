@@ -46,4 +46,14 @@ public class Ex12_NumberInWord
 }
 
 /*
+Write a method called printNumberInWord, with one parameter. (whole number)
+
+The method needs to print "ZERO", "ONE", "TWO", ... "NINE", "OTHER" if the
+int parameter number is 0, 1, 2, .... 9 or other for any other number including
+negative numbers. You can use if-else statement or switch statement whatever is
+easier for you.
+
+
+NOTE: Method needs to be defined as public static.
+      Do not add a main method to solution code.
 */

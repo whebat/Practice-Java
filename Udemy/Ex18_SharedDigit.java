@@ -17,15 +17,19 @@ public class Ex18_SharedDigit
 		int z1st = z % 10;
 		int z2nd = (z / 10) % 10;
 
-		if (y1st == z1st || y1st == z2nd || y2nd == z1st || y2nd == z2nd)
+		if (y1st == z1st ||
+		    y1st == z2nd ||
+		    y2nd == z1st ||
+		    y2nd == z2nd)
 			return true;
+
 		else
 			return false;
 	}
 }
 
 /*
-Write a method named hasSharedDigit with two parameters of type int. 
+Write a method named hasSharedDigit with two parameters of type int.
 
 Each number should be within the range of 10 (inclusive) - 99 (inclusive).
 If one of the numbers is not within the range, the method should return false.

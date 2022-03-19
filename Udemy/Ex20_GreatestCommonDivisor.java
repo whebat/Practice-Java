@@ -10,8 +10,8 @@ public class Ex20_GreatestCommonDivisor
 			return -1;
 
 		int greatestCommonDivisor = 0;
-		int smallerNumber = (first < second) ? first: second;
-		
+		int smallerNumber = (first < second) ? first : second;
+
 		for (int divisor = 2; divisor <= smallerNumber; divisor++)
 			if (first % divisor == 0 && second % divisor == 0)
 				greatestCommonDivisor = divisor;
@@ -22,7 +22,7 @@ public class Ex20_GreatestCommonDivisor
 
 /*
 Write a method named getGreatestCommonDivisor
-with two parameters (int) first and second. 
+with two parameters (int) first and second.
 
 If one of the parameters is < 10,
 the method should return -1 to indicate an invalid value.
@@ -50,7 +50,7 @@ EXAMPLE INPUT/OUTPUT:
 
 HINT: Use a while/for loop, to check if both numbers
       can be divided without a remainder.
-      
+
       Find the minimum of the two numbers.
 
 NOTE: Method needs to be defined as public static.

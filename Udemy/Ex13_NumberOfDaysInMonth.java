@@ -9,11 +9,7 @@ public class Ex13_NumberOfDaysInMonth
 		if (year < 1 || year > 9999 || year % 4 != 0)
 			return false;
 
-		else if (year % 100 == 0)
-			return (year % 400 == 0) ? true : false;
-
-		else
-			return true;
+		return year % 100 == 0 ? year % 400 == 0 : true;
 	}
 
 	public static int getDaysInMonth(int month, int year)
@@ -30,7 +26,7 @@ public class Ex13_NumberOfDaysInMonth
 			return 30;
 
 		case 2:
-			return (isLeapYear(year)) ? 29 : 28; // true : false;
+			return isLeapYear(year) ? 29 : 28;
 
 		default:
 			return -1; // Invalid month.
@@ -41,7 +37,7 @@ public class Ex13_NumberOfDaysInMonth
 /*
 Write a method isLeapYear, see Ex04.
 
-Write another method getDaysInMonth with two parameters (int) month and year. 
+Write another method getDaysInMonth with two parameters (int) month and year.
 
 If parameter month is < 1 or > 12 return -1. ​
 If parameter year is < 1 or > 9999 then return -1.

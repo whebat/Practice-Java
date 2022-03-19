@@ -4,17 +4,14 @@
 
 public class Ex07_TeenNumberChecker
 {
-	public static boolean hasTeen (int ageA, int ageB, int ageC)
+	public static boolean hasTeen(int ageA, int ageB, int ageC)
 	{
-		if ((isTeen(ageA)) || (isTeen(ageB)) || (isTeen(ageC)))
-			return true;
-
-		return false;
+		return isTeen(ageA) || isTeen(ageB) || isTeen(ageC);
 	}
 
-	public static boolean isTeen (int age)
+	public static boolean isTeen(int age)
 	{
-		return (age >= 13 && age <= 19) ? true : false;
+		return age >= 13 && age <= 19;
 	}
 }
 

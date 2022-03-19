@@ -1,16 +1,13 @@
 public class Ex03_BarkingDog
 {
-	public static boolean shouldWakeUp (boolean barking, int hourOfDay)
+	public static boolean shouldWakeUp(boolean barking, int hourOfDay)
 	{
-		boolean after_10PM_before_8AM = false;
+		if (!barking)
+			return false;
 
-		if (hourOfDay >= 0 && hourOfDay < 8)
-			after_10PM_before_8AM = true;
-
-		else if (hourOfDay > 22 && hourOfDay <= 23)
-			after_10PM_before_8AM = true;
-
-		return ( (barking) && (after_10PM_before_8AM) ) ? true : false;
+		else
+			return hourOfDay >= 0 && hourOfDay < 8    ||
+			       hourOfDay > 22 && hourOfDay <= 23;
 	}
 }
 

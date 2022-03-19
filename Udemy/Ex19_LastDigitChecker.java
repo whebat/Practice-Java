@@ -6,27 +6,24 @@ public class Ex19_LastDigitChecker
 {
 	public static boolean hasSameLastDigit(int a, int b, int c)
 	{
-		if ( (!isValid(a)) || (!isValid(b)) || (!isValid(c)) )
+		if (!isValid(a) || !isValid(b) || !isValid(c))
 			return false;
 
 		int lasta = a % 10;
 		int lastb = b % 10;
 		int lastc = c % 10;
 
-		if (lasta == lastb || lastb == lastc || lasta == lastc)
-			return true;
-		else
-			return false;
+		return lasta == lastb || lastb == lastc || lasta == lastc;
 	}
 
 	public static boolean isValid(int d)
 	{
-		return (d < 10 || d > 1000) ? false : true;
+		return d >= 10 && d <= 1000;
 	}
 }
 
 /*
-Write a method named hasSameLastDigit with three parameters of type int. 
+Write a method named hasSameLastDigit with three parameters of type int.
 Each number should be within the range of 10 (inclusive) - 1000 (inclusive).
 If one of the numbers is not within the range, the method should return false.
 

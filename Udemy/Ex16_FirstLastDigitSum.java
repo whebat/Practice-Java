@@ -9,10 +9,10 @@ public class Ex16_FirstLastDigitSum
 		if (number < 0)
 			return -1;
 
-		int firstDigit = 0; // must be defined outside of loop
+		int firstDigit = 0;
 		int lastDigit = number % 10;
 
-		// finding the first digit
+		// Finding the first digit.
 		while (number > 0) {
 			firstDigit = number % 10;
 			number /= 10;

@@ -4,14 +4,14 @@
 
 public class Ex04_LeapYear
 {
-	public static boolean isLeapYear (int year)
+	public static boolean isLeapYear(int year)
 	{
 		// Determine range, evenly divisible by 4.
 		if (year < 1 || year > 9999 || year % 4 != 0)
 			return false;
 
 		else if (year % 100 == 0)
-			return (year % 400 == 0) ? true : false;
+			return year % 400 == 0;
 
 		else
 			return true;

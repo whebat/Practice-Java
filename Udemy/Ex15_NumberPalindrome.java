@@ -10,7 +10,7 @@ public class Ex15_NumberPalindrome
 			return true;
 
 		if (number < 0)
-			number = number * (-1);
+			number *= -1;
 
 		int original = number;
 		int reverse = 0;
@@ -18,12 +18,12 @@ public class Ex15_NumberPalindrome
 
 		while (number > 0) {
 			lastDigit = number % 10;
-			reverse = reverse * 10;
-			reverse = reverse + lastDigit;
-			number = number / 10;
+			reverse *= 10;
+			reverse += lastDigit;
+			number /= 10;
 		}
 
-		return (reverse == original) ? true : false;
+		return reverse == original;
 	}
 }
 
@@ -46,7 +46,7 @@ TIP: Logic to check a palindrome number
      Store it in some variable say reverse.
      Compare the number with reverse.
      If both are the the same then it is a palindrome number.
-     
+
      Logic to reverse a number
      Declare and initialize another variable to store the reverse of a number.
      e.g. reverse = 0.
@@ -59,10 +59,10 @@ TIP: Logic to check a palindrome number
      Since the last digit of the number is processed,
        remove the last digit of num.
      To remove the last digit divide number by 10.
-     Repeat steps until number is not equal to (or greater than) zero. 
+     Repeat steps until number is not equal to (or greater than) zero.
 
      A while loop would be good for this coding exercise.
-     
+
      Be careful with negative numbers. They can also be palindrome numbers.
      Be careful with reversing a number, you will need a parameter for
      comparing a reversed number with the starting number (parameter).

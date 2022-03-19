@@ -6,7 +6,7 @@ public class Ex12_NumberInWord
 {
 	public static void printNumberInWord(int number)
 	{
-		switch(number) {
+		switch (number) {
 
 		case 0:
 			System.out.println("ZERO");
@@ -40,7 +40,6 @@ public class Ex12_NumberInWord
 			break;
 		default:
 			System.out.println("OTHER");
-			break;
 		}
 	}
 }

@@ -6,10 +6,7 @@ public class Ex14_SumOddRange
 {
 	public static boolean isOdd(int number)
 	{
-		if (number < 0)
-			return false;
-		else
-			return (number % 2 == 0) ? false : true; // even : odd;
+		return number < 0 ? false : number % 2 != 0;
 	}
 
 	public static int sumOdd(int start, int end)
@@ -20,7 +17,8 @@ public class Ex14_SumOddRange
 		 int sum = 0;
 
 		 for (int i = start; i <= end; i++)
-			 sum = (isOdd(i)) ? sum + i : sum;
+			 if (isOdd(i))
+				sum += i;
 
 		 return sum;
 	}
@@ -42,7 +40,7 @@ to check if each number is odd.
 
 The parameter end needs to be greater than or equal to start and both
 start and end parameters have to be greater than 0. If those conditions
-are not satisfied return -1 from the method to indicate invalid input. 
+are not satisfied return -1 from the method to indicate invalid input.
 
 EXAMPLE INPUT/OUTPUT:
 

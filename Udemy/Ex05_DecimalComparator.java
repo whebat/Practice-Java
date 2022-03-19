@@ -4,12 +4,9 @@
 
 public class Ex05_DecimalComparator
 {
-	public static boolean areEqualByThreeDecimalPlaces (double a, double b)
+	public static boolean areEqualByThreeDecimalPlaces(double a, double b)
 	{
-		int a2 = (int) (a * 1000);
-		int b2 = (int) (b * 1000);
-
-		return (a2 == b2) ? true : false;
+		return (int) (a * 1000) == (int) (b * 1000);
 	}
 }
 

@@ -11,11 +11,11 @@ public class Ex22_PerfectNumber
 
 		int sum = 0;
 
-		for (int i = 1; i <= number; i++)
+		for (int i = 1; i <= number/2; i++)
 			if (number % i == 0)
 			    sum += i;
 
-		return (sum == number * 2) ? true : false;
+		return sum == number;
 	}
 }
 
@@ -29,10 +29,10 @@ number without leaving a remainder and exclude the perfect number itself.
 For example, take the number 6:
 Its proper divisors are 1, 2, and 3.
 Since 6 is the value of the perfect number, it is excluded.
-The sum of its proper divisors is 1 + 2 + 3 = 6. 
+The sum of its proper divisors is 1 + 2 + 3 = 6.
 Therefore, 6 is a perfect number (as well as the first perfect number).
 
-Write a method named isPerfectNumber with one parameter (int) named number. 
+Write a method named isPerfectNumber with one parameter (int) named number.
 
 If number is < 1, the method should return false.
 
